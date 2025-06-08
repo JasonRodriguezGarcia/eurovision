@@ -70,7 +70,8 @@ const EurovisionVotePage = () => {
     useEffect(() => {
         const getActuaciones = async () => {
             try {
-                const response = await fetch (`http://localhost:5000/api/v1/eurovision/actuaciones`)
+                // const response = await fetch (`http://localhost:5000/api/v1/eurovision/actuaciones`)
+                const response = await fetch (`https://eurovision-g8lw.onrender.com/api/v1/eurovision/actuaciones`)
                 if (!response.ok) {
                     throw new Error ("Error en consulta de actuaciones")
                 }
