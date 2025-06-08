@@ -342,8 +342,7 @@ const EurovisionVotePage = () => {
                                 {true &&
                                     <TableCell align="right">
                                         {/* {actuacion.votoLinea} */}
-                                        {/* <FormControl sx={{width: 75}}> */}
-                                        <FormControl sx={{width: 80}}>
+                                        <FormControl sx={{width: 75}}>
                                             <InputLabel id="demo-simple-select-label2">Note</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label2"
@@ -351,7 +350,7 @@ const EurovisionVotePage = () => {
                                                 value={actuacion.votoLinea}
                                                 label="Voto"
                                                 onChange={(e)=> handleVoto(e, index)}
-                                                sx={{fontSize: "30px"}}
+                                                sx={{fontSize: "29px"}}
                                             >
                                                 <MenuItem value="">None</MenuItem>
                                                 {lineasDatosVoto}
