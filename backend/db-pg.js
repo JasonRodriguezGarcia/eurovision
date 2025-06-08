@@ -22,11 +22,11 @@ const { Pool } = pkg;
 //      dotenv.config();
 
 const pool = new Pool({
-  user: 'postgres_37d6_user',
-  host: 'dpg-d12ahjs9c44c7384n6r0-a.frankfurt-postgres.render.com',
-  database: 'postgres_37d6',
-  password: 'czmvMRQVLbx1lKWYnhSj9Ln2WPFNbN3Y',
-  port: 5432,
+  user: DATABASE_USER,
+  host: DATABASE_HOST,
+  database: DATABASE_DATABASE,
+  password: DATABASE_PASSWORD,
+  port: DATABASE_PORT,
   ssl: {
     rejectUnauthorized: false
   }

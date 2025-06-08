@@ -209,28 +209,15 @@ DATABASE_URL=postgres://usuario:contraseña@servidor.render.com:5432/nombre_db
 bash
 npm install dotenv
 Y en tu archivo principal (como index.js o app.js), al principio agrega:
-
-js
 import dotenv from 'dotenv';
 dotenv.config();
 3. Opcional: cambiar el hostname del servidor
-En tu archivo principal tienes:
 
-js
-Copiar
-Editar
+En tu archivo principal tienes:
 const HOSTNAME = "127.0.0.1"
 Para despliegue en Render, puedes cambiarlo por:
-
-js
-Copiar
-Editar
 const HOSTNAME = "0.0.0.0"; // permite recibir conexiones externas
 Y asegúrate de que usas:
-
-js
-Copiar
-Editar
 const PORT = process.env.PORT || 5000;
 Render establecerá PORT automáticamente.
 
