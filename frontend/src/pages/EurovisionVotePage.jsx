@@ -92,7 +92,8 @@ const EurovisionVotePage = () => {
         }
         const getVotantes = async () => {
             try {
-                const response = await fetch (`http://localhost:5000/api/v1/eurovision/votantes`)
+                // const response = await fetch (`http://localhost:5000/api/v1/eurovision/votantes`)
+                const response = await fetch (`https://eurovision-g8lw.onrender.com/api/v1/eurovision/votantes`)
                 if (!response.ok) {
                     throw new Error ("Error en consulta de votantes")
                 }
@@ -160,7 +161,8 @@ const EurovisionVotePage = () => {
         console.log("Votacion: ", votacion)
         try {
             // fetch POST y pasar user como cuerpo (body)
-            const response = await fetch('http://localhost:5000/api/v1/eurovision/votos',
+            // const response = await fetch('http://localhost:5000/api/v1/eurovision/votos',
+            const response = await fetch('https://eurovision-g8lw.onrender.com//api/v1/eurovision/votos',
                 {
                     method: 'POST',
                     headers: {'Content-type': 'application/json; charset=UTF-8'},

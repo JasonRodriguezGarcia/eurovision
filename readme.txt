@@ -126,6 +126,7 @@ Usuario, contraseña y base de datos según los datos que Render te dio
 
 ******************************
 DESPLEGANDO EN RENDER EL BACKEND
+OJO CADA CAMBIO EN EL PROJECTO DE FRONTEND/BACKEND SUBIR A GIT
 OJO EL INDEX.JS NO USAR HOSTNAME EN app.listen, QUITARLO PARA QUE USE POR DEFECTO 0.0.0.0
 DESDE DASHBOARD
 add new
@@ -147,10 +148,25 @@ Instance Type
     FREE
 DEPLOY WEB SERVICE para empezar a desplegar. Tarda unos minutos.
 Una vez desplegado si todo esta OK, arriba nos aparece el url para llamar desde frontend
+OJO HAY QUE REEMPLAZAR EN FRONTEND EN TODAS LAS LLAMADAS CON FETCH
     https://eurovision-g8lw.onrender.com
 
 DESPLEGANDO EN RENDER FRONTENT
-
+OJO CADA CAMBIO EN EL PROJECTO DE FRONTEND/BACKEND SUBIR A GIT
+Add new
+    static site
+public git repository
+    https://github.com/JasonRodriguezGarcia/eurovision
+        connect
+Name 
+    eurovision-1
+Root Directory
+    frontend
+Publish Directory
+    dist para VITE / build para React (LOS DIRECTORIOS dist ó build deben estar creados antes en el repositorio)
+DEPLOY STATIC SITE
+Una vez desplegado si todo esta OK, arriba nos aparece el url para llamar desde navegador
+    https://eurovision-1.onrender.com/
 
 
 
