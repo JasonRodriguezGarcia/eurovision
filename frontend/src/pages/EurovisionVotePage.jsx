@@ -300,7 +300,7 @@ const EurovisionVotePage = () => {
                                 <TableCell align="right" sx={{fontSize: "20px"}}>Artist Name</TableCell>
                                 <TableCell align="right" sx={{fontSize: "20px"}}>Country</TableCell>
                                 <TableCell align="right" sx={{fontSize: "20px"}}>Song title</TableCell>
-                                {true && <TableCell align="right" sx={{fontSize: "20px"}}>Qualification</TableCell>}
+                                {true && <TableCell align="right" sx={{fontSize: "25px"}}>Qualification</TableCell>}
                                 {/* <TableCell align="right" sx={{fontSize: "20px"}}> </TableCell> */}
                             </TableRow>
                         </TableHead>
