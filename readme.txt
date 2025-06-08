@@ -125,7 +125,27 @@ SSL habilitado (muy importante)
 Usuario, contraseña y base de datos según los datos que Render te dio
 
 ******************************
-
+DESPLEGANDO EN RENDER EL BACKEND
+OJO EL INDEX.JS NO USAR HOSTNAME EN app.listen, QUITARLO PARA QUE USE POR DEFECTO 0.0.0.0
+DESDE DASHBOARD
+add new
+    web service
+public git repository
+    https://github.com/JasonRodriguezGarcia/eurovision
+        connect
+Name 
+    eurovision
+Language
+    Automaticamente detecta el entorno NODE
+Root Directory
+    backend
+Build Command
+    npm install
+Start Command
+    node index.js
+Instance Type
+    FREE
+DEPLOY WEB SERVICE para empezar a desplegar. Tarda unos minutos.
 
 
 
