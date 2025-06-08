@@ -31,6 +31,7 @@ const pool = new Pool({
     rejectUnauthorized: false
   }
 });
+console.log ("imprimo pool: ", pool)
 
 export default pool;
 
