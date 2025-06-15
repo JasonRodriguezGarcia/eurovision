@@ -228,4 +228,17 @@ Tu backend se conecta a la base de datos en Render
 
 Los endpoints /api/v1/eurovision/votantes, /votos, etc. funcionan como antes
 
+**************
+DATOS PARA SUPABASE
 
+postgresql://postgres:[YOUR-PASSWORD]@db.slipxykygueybdeveqtx.supabase.co:5432/postgres
+
+# Direct connection to the database. Used for migrations
+DIRECT_URL="postgresql://postgres.slipxykygueybdeveqtx:[YOUR-PASSWORD]@aws-0-eu-west-3.pooler.supabase.com:5432/postgres"
+
+#datos de supabase
+DATABASE_USER: postgres.slipxykygueybdeveqtx
+DATABASE-HOST: aws-0-eu-west-3.pooler.supabase.com
+DATABASE_DATABASE: postgres
+DATABASE_PASSWORD: 1Jason2Rosita4
+DATABASE_PORT: 5432
