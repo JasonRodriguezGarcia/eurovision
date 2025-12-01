@@ -48,7 +48,7 @@ router.post('/votosmultiples', async(req, res) => {
     }
     // const resultVotosMultiples = await sendVotosMultiples(votosEmitidos);
     // console.log(resultVotosMultiples);
-    res.json ({restultado: "OK"})
+    res.json ({resultado: "OK"})
 })
 
 // ✅ Endpoint de salud básico (para Render / UptimeRobot-pending)
