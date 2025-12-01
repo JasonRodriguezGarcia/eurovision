@@ -51,6 +51,13 @@ router.post('/votosmultiples', async(req, res) => {
     res.json ({restultado: "OK"})
 })
 
+// ✅ Endpoint de salud básico (para Render / UptimeRobot-pending)
+// Usaremos este Endpoint para que el backend en Render que es gratuíto no entre en stand-by
+router.get("/health", (req, res) => {
+    console.log("Llamando a Health para no entrar en stand-by...")
+    res.status(200).send("OK")
+})
+
 // router.get('/informes/:tipo', async(req, res) => { // ojo con el order al poner este gues
 //     const {tipo} = req.params
 //     const miembros = await informe(tipo == 'activos'? 1 : 0);

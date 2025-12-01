@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-// const HOSTNAME = "127.0.0.1"
+const HOSTNAME = "127.0.0.1"
 
 // Middleware
 // Servir archivos desde la carpeta 'public'
@@ -30,8 +30,9 @@ app.use(express.json());
 app.use('/api/v1/eurovision', eurovisionRouter)
 
 // Start Server
-// app.listen(PORT, HOSTNAME, () => {
-// console.log(`Server running on http://localhost:${PORT} IP:${HOSTNAME}`);
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, HOSTNAME, () => {
+console.log(`Server running on http://localhost:${PORT} IP:${HOSTNAME}`);
 });
+// // app.listen(PORT, () => {
+//   console.log(`Server running on http://localhost:${PORT}`);
+// });
